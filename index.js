@@ -3,3 +3,9 @@ function findMatching (drivers, string) {
   let newdrivers = drivers.filter(function (name) {return name.toUpperCase() === string.toUpperCase(); });
   return newdrivers;
 }
+
+function fuzzyMatch (drivers, string) {
+  let newdrivers = drivers.filter(function (name) {return name[0] === string[0]; });
+  return newdrivers;
+}
+}
