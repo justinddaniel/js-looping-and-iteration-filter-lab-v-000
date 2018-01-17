@@ -8,4 +8,4 @@ function fuzzyMatch (drivers, string) {
   let newdrivers = drivers.filter(function (name) {return name[0] === string[0]; });
   return newdrivers;
 }
-}
+
